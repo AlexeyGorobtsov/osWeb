@@ -1,0 +1,29 @@
+@import url('./floatingLabel.css');
+
+:root {
+    --turquoise: #51BBBE;
+    --black8: rgba(0,0,0,0.8);
+    --black6: rgba(0,0,0,0.6);
+}
+
+body, html {
+    font-family: Open Sans, sans-serif;
+    float: left;
+    width: 100%;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 20px;
+}
+.wrap-contact-form [class^='contact'] {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
