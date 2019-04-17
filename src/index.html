@@ -9,60 +9,66 @@
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
-<form>
-    <div class="wrap-contact-form">
-        <div class="contact-number">
-            <label for="contact-number">Номер контакта:</label>
-            <input type="text" id="contact-number">
+<div class="main-wrap">
+    <form>
+        <div class="wrap-contact-form">
+            <div class="contact-number">
+                <input type="text" id="contact-number" required>
+                <label for="contact-number">Номер контакта:</label>
+            </div>
+            <div class="contact-operator">
+                <input type="text" id="operator" required>
+                <label for="operator">Оператор</label>
+            </div>
+            <div class="contact-full-name">
+                <input type="text" id="full-name" required>
+                <label for="full-name">ФИО</label>
+            </div>
+            <div class="contact-phone-number">
+                <input type="text" id="phone-number" required>
+                <label for="phone-number">Номер телефона</label>
+            </div>
+            <div class="contact-email-address">
+                <input type="text" id="email-address" required>
+                <label for="email-address">Адрес электронной почты</label>
+            </div>
+            <div class="contact-status">
+                <input type="text" id="contact-status" required>
+                <label for="contact-status">Отложено до даты</label>
+            </div>
+            <div class="contact-postponed-until-date">
+                <input type="text" id="postponed-until-date" required>
+                <label for="postponed-until-date">Отложено до времени</label>
+            </div>
+            <div class="contact-license-contract-number">
+                <input type="text" id="license-contract-number" required>
+                <label for="license-contract-number">Номер лицензионого контракта</label>
+            </div>
+            <div class="contact-link-to-payment">
+                <input type="text" id="link-to-payment" required>
+                <label for="link-to-payment">Ссылка на оплату</label>
+            </div>
+            <div class="contact-comment">
+                <label for="comment">Комментарий</label>
+                <textarea id="comment"></textarea>
+            </div>
         </div>
-        <div class="contact-operator">
-            <label for="operator">Оператор</label>
-            <input type="text" id="operator">
+        <div class="wrap-buttons">
+            <div class="wrap-button">
+                <button class="put-aside button">Отложить</button>
+                <div class="feedback"></div>
+            </div>
+            <button class="car">Автомобиль</button>
+            <button class="owner">Владелец</button>
+            <button class="lessor">Лизингодатель</button>
+            <button class="lessee">Лизингополучатель</button>
+            <button class="insured">Страхователь</button>
+            <button class="send">Послать</button>
+            <button class="forward">Отправить</button>
         </div>
-        <div class="contact-full-name">
-            <label for="full-name">ФИО</label>
-            <input type="text" id="full-name">
-        </div>
-        <div class="contact-phone-number">
-            <label for="phone-number">Номер телефона</label>
-            <input type="text" id="phone-number">
-        </div>
-        <div class="contact-email-address">
-            <label for="email-address">Адрес электронной почты</label>
-            <input type="text" id="email-address">
-        </div>
-        <div class="contact-status">
-            <label for="contact-status">Отложено до даты</label>
-            <input type="text" id="contact-status">
-        </div>
-        <div class="contact-postponed-until-date">
-            <label for="postponed-until-date">Отложено до времени</label>
-            <input type="text" id="postponed-until-date">
-        </div>
-        <div class="contact-license-contract-number">
-            <label for="license-contract-number">Номер лицензионого контракта</label>
-            <input type="text" id="license-contract-number">
-        </div>
-        <div class="contact-link-to-payment">
-            <label for="link-to-payment">Ссылка на оплату</label>
-            <input type="text" id="link-to-payment">
-        </div>
-        <div class="contact-comment">
-            <label for="comment">Комментарий</label>
-            <textarea id="comment"></textarea>
-        </div>
-    </div>
-    <div class="wrap-buttons">
-        <button class="put-aside">Отложить</button>
-        <button class="car">Автомобиль</button>
-        <button class="owner">Владелец</button>
-        <button class="lessor">Лизингодатель</button>
-        <button class="lessee">Лизингополучатель</button>
-        <button class="insured">Страхователь</button>
-        <button class="send">Послать</button>
-        <button class="forward">Отправить</button>
-    </div>
-</form>
+    </form>
+</div>
+
 
 <script type="module" src="./js/index.js"></script>
 </body>
